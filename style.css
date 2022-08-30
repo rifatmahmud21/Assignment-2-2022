@@ -110,6 +110,21 @@ a {
     padding: 4px;
 }
 
+.view-all-button {
+    display: block;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    visibility: hidden;
+
+}
+
 /* footer-section */
 .footer-section {
     background-color: black;
@@ -151,4 +166,185 @@ hr {
 .social-media h1 {
     text-align: center;
     padding-top: 0;
+}
+
+
+
+
+
+/* mobile-device */
+
+
+/* .main-banner */
+@media only screen and (max-width: 688px) {
+    .main-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .half-width h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .half-width p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .half-width {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .half-width img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .main-section-button {
+        margin-bottom: 0;
+        margin-left: 35%;
+    }
+
+    /* blog-section */
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+
+    }
+
+    .side-nav {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        margin: 10px;
+        margin-left: 20%;
+
+    }
+
+    .nav-button {
+        margin-right: 10px;
+        padding-right: 25px;
+        border: 1px solid black;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-item {
+        text-align: center;
+        justify-content: center
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+/* tablet device */
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .main-banner {
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        padding: 0 20px 0 20px;
+        margin: 10px;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    .half-width h1 {
+        font-size: 40px;
+    }
+
+    .half-width p {
+        font-size: 10px;
+    }
+
+    .half-width {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .half-width img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    /* blog-section */
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+
+    }
+
+    .side-nav {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        margin-right: 0;
+
+
+    }
+
+    .nav-button {
+        margin-right: 5px;
+        padding-right: 80px;
+        padding: 20px 80px 20px 80px;
+        border: 1px solid black;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-all-button {
+        visibility: visible;
+    }
+
+
+    /* footer-section */
+    .footer-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-item {
+        text-align: center;
+        justify-content: center
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .footer-links {
+        font-size: 10px;
+        flex-direction: row;
+    }
 }
