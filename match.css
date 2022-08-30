@@ -66,12 +66,11 @@ button:hover {
     border-radius: 10px;
 }
 
-.blog-button {
-    font-weight: 900;
-    background-color: red;
+.match-button {
+    background-color: rgb(255, 0, 0);
 }
 
-.selected-button {
+.match-button a {
     color: aliceblue;
 }
 
@@ -80,12 +79,18 @@ a {
     color: black;
 }
 
-.blog-section {
+.match-section {
     display: flex;
     margin-left: 250px;
 }
 
-.blogs {
+.match {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Upcomming-match {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
@@ -93,7 +98,8 @@ a {
 
 }
 
-.blogs-card {
+.match-card {
+    text-align: center;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 315px;
@@ -101,7 +107,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.blogs-card p {
+.match-card p {
     color: rgb(170, 170, 170);
 }
 
@@ -216,7 +222,7 @@ hr {
 
     /* blog-section */
 
-    .blog-section {
+    .match-section {
         display: flex;
         flex-direction: column;
         margin-left: 0;
@@ -239,7 +245,7 @@ hr {
         border: 1px solid black;
     }
 
-    .blogs {
+    .Upcomming-match {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -293,9 +299,9 @@ hr {
         margin-left: 15%;
     }
 
-    /* blog-section */
+    /* match-section */
 
-    .blog-section {
+    .match-section {
         display: flex;
         flex-direction: column;
         margin-left: 0;
@@ -319,12 +325,8 @@ hr {
         border: 1px solid black;
     }
 
-    .blogs {
+    .Upcomming-match {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .view-all-button {
-        visibility: visible;
     }
 
 
