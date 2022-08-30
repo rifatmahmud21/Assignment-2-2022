@@ -1,3 +1,4 @@
+/* common-styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     padding: 0 100px 0 100px;
     margin: 100px;
     border-radius: 30px;
+    align-items: center;
 }
 
 .main-title {
@@ -18,7 +20,7 @@ body {
     margin-bottom: 0px;
 }
 
-button {
+.main-section-button {
     font-size: 15px;
     font-weight: 700;
     color: aliceblue;
@@ -42,4 +44,68 @@ button:hover {
 
 .half-width img {
     width: 100%;
+}
+
+
+/* blog-section */
+.side-nav {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 33px;
+    margin-right: 100px;
+    border-radius: 35px;
+}
+
+.nav-button {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding: 5px 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.blog-button {
+    font-weight: 900;
+    background-color: red;
+}
+
+.selected-button {
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-section {
+    display: flex;
+    margin-left: 250px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+
+}
+
+.blogs-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 315px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.blogs-card p {
+    color: rgb(170, 170, 170);
+}
+
+.blogs-card button {
+    font-size: 15px;
+    padding: 4px;
 }
