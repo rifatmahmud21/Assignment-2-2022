@@ -24,7 +24,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     color: aliceblue;
-    background-color: rgb(255, 75, 75);
+    background-color: rgb(255, 0, 0);
     border: 0;
     padding: 5px 25px;
     margin-bottom: 100px;
@@ -108,4 +108,47 @@ a {
 .blogs-card button {
     font-size: 15px;
     padding: 4px;
+}
+
+/* footer-section */
+.footer-section {
+    background-color: black;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.footer-item h1 {
+    font-size: 50px;
+}
+
+.footer-item {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: rgb(194, 194, 194);
+}
+
+hr {
+    width: 1500px;
+    color: rgb(82, 82, 82);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links p {
+    margin: 30px;
+}
+
+.social-media a {
+    font-size: 35px;
+    color: rgb(197, 197, 197);
+    text-align: center;
+}
+
+.social-media h1 {
+    text-align: center;
+    padding-top: 0;
 }
